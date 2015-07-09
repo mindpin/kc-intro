@@ -4,27 +4,15 @@
   {% include head.html %}
 
   <body>
-
-    <!--<main role="main">-->
-      <!--{% include header.html %}-->
-      <!--<div class="container">-->
-        <!--{{ content }}-->
-      <!--</div>-->
-      <!--{% include footer.html %}-->
-    <!--</main>-->
-
     <div class="container">
       {% include header.html %}
 
-      <div class="content">
+      <div class="content clearfix">
         {{ content }}
       </div>
 
       {% include footer.html %}
     </div>
-
-
-
 
     <script src="{{ ASSET_PATH }}/js/bootstrap.min.js"></script>
   </body>
