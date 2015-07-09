@@ -1,0 +1,13 @@
+# 修改 `redo-help-doc/_config.yml` 文件的内容，加入以下配置：
+baseurl: ""
+source: "_src"
+title: "kc intro"
+destination: "_www"
+markdown: redcarpet
+redcarpet:
+  extensions:
+  - fenced_code_blocks
+  - footnotes
+sass:
+  style: :compressed
+  sass_dir: _css
