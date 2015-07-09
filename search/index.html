@@ -9,10 +9,10 @@
   <title>搜索</title>
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/search/">
-  <link rel="alternate" type="application/rss+xml" title="kc intro" href="/feed.xml" />
+  <link rel="stylesheet" href="/kc-intro/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/kc-intro/css/main.css">
+  <link rel="canonical" href="/kc-intro/search/">
+  <link rel="alternate" type="application/rss+xml" title="kc intro" href="/kc-intro/feed.xml" />
   <script src="/js/jquery.min.js"></script>
 </head>
 
@@ -35,25 +35,25 @@
         
         
         <li>
-          <a class="page-link" href="/projects.html">产品</a>
+          <a class="page-link" href="/kc-intro/projects.html">产品</a>
         </li>
         
         
         
         <li>
-          <a class="page-link" href="/cases.html">案例</a>
+          <a class="page-link" href="/kc-intro/cases.html">案例</a>
         </li>
         
         
         
         <li>
-          <a class="page-link" href="/pricing.html">报价</a>
+          <a class="page-link" href="/kc-intro/pricing.html">报价</a>
         </li>
         
         
         
         <li>
-          <a class="page-link" href="/faq.html">FAQ</a>
+          <a class="page-link" href="/kc-intro/faq.html">FAQ</a>
         </li>
         
         
@@ -71,9 +71,9 @@
 
       <div class="content clearfix">
         <div class="sidebar col-md-3">
-  <!-- 注意，如果发布到 github pages 时采用了 gh-pages 方式，那么下列代码中的 /search, /js 等路径需要增加  前缀 -->
+  <!-- 注意，如果发布到 github pages 时采用了 gh-pages 方式，那么下列代码中的 /search, /js 等路径需要增加 /kc-intro 前缀 -->
 <div id="search" class="search-bar" >
-  <form action="/search" method="get">
+  <form action="/kc-intro/search" method="get">
     <h2><input style="font-size:16px;width:120px;" type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></h2>
   </form>
 </div>
@@ -92,11 +92,11 @@
   {{/entries}}
 </script>
 
-<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/kc-intro/js/search.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
   $(function() {
     $('#search-query').lunrSearch({
-      indexUrl: '/js/index.json',   // Url for the .json file containing search index data
+      indexUrl: '/kc-intro/js/index.json',   // Url for the .json file containing search index data
       results : '#search-results',  // selector for containing search results element
       entries : '.entries',         // selector for search entries containing element (contained within results above)
       template: '#search-results-template'  // selector for Mustache.js template
