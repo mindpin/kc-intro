@@ -1,4 +1,5 @@
 # 修改 `redo-help-doc/_config.yml` 文件的内容，加入以下配置：
+#baseurl: "/kc-intro"
 baseurl: ""
 source: "_src"
 title: "kc intro"
