@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 报价
-nav: true
-order: 3
+categories:
+- pricing
 ---
 
 # 报价

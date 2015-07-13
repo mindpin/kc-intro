@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 'FAQ'
-nav: true
-order: 4
+categories:
+- faq
 ---
 
 # FAQ

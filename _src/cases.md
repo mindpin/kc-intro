@@ -1,8 +1,8 @@
 ---
 layout: page
 title: '案例'
-nav: true
-order: 2
+categories:
+- cases
 ---
 
 # 案例
