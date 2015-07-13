@@ -13,15 +13,15 @@ sass:
   style: :compressed
   sass_dir: _css
 
-permalink: category/docs/:title.html
+permalink: articles/:title.html
 
 collections:
   category:
     output: true
-    permalink: category/:path/index.html
+    permalink: :path/index.html
   sub_category:
     output: true
-    permalink: category/:path/index.html
+    permalink: :collection/:path/index.html
   articles:
     output: true
     permalink: articles/:title.html

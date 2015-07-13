@@ -10,11 +10,12 @@ layout: default
 <div class="col-md-9">
   <ul class="list-unstyled">
     {% for article in site.articles %}
-    {% if article.category == page.category %}
+    {% if article.sub-category == page.sub-category %}
     <li>
       <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
     </li>
     {% endif %}
     {% endfor %}
   </ul>
+  {{ content }}
 </div>

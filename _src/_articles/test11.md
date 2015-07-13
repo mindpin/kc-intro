@@ -1,9 +1,8 @@
 ---
 layout: post
-title: 案例3
+title: 案例a
 category: cases
 sub-category: case_type_1
 ---
 
-案例3
-
+# 案例1

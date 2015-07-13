@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="sidebar col-md-3">
+  {% include pages.html categories=page.categories title=page.title %}
   {% include search.html %}
+  {{ page.after_search }}
 </div>
 
 <div class="col-md-9">

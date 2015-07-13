@@ -1,14 +1,15 @@
-<div>
-  [{{ include.category }},{{ include.sub-category }}]
-  {% for post in site.posts reversed %}
-  <ul class="list-unstyled">
-  {% if post.category == include.category %}
-    {% if post.sub-category == include.sub-category %}
-      <li>
-        <a href="{{ site.baseurl }}/category/docs/{{ post.title }}.html">{{ post.title }}</a>
-      </li>
-    {% endif %}
+<ul class="nav nav-pills nav-stacked">
+  {% for sub in site.data.sub-category %}
+  {% assign key = sub[0] %}
+  {% assign value = sub[1] %}
+  {% if include.category.category == value['category'] %}
+  {% if include.category.sub-category == key %}
+  <li class="active">
+  {% else %}
+  <li>
   {% endif %}
-  </ul>
+    <a href="{{ site.baseurl }}/sub_category/{{ key }}/index.html">{{ value['name'] }}</a>
+  </li>
+  {% endif %}
   {% endfor %}
-</div>
+</ul>

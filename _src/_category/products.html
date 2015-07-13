@@ -1,0 +1,14 @@
+---
+layout: category
+title: products
+category: products
+---
+{% for article in site.articles reversed %}
+<ul class="list-unstyled">
+  {% if article.category == 'products' %}
+  <li>
+    <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+  </li>
+  {% endif %}
+</ul>
+{% endfor %}
