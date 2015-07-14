@@ -1,7 +1,7 @@
 ---
 layout: product
 title: 互动云课题
-category: prod_type_1
+category: products1
 ---
 
 * 快速的课程发布

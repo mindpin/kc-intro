@@ -1,27 +1,27 @@
-prod_type_1:
+products1:
   name: 产品类别 1
   category: products
-prod_type_2:
+products2:
   name: 产品类别 2
   category: products
-prod_type_3:
+products3:
   name: 产品类别 3
   category: products
-case_type_1:
+cases1:
   name: 案例类别 1
   category: cases
-case_type_2:
+cases2:
   name: 案例类别 2
   category: cases
-case_type_3:
+cases3:
   name: 案例类别 3
   category: cases
-pric_type_1:
+pricing1:
   name: 服务类别 1
   category: pricing
-pric_type_2:
+pricing2:
   name: 服务类别 2
   category: pricing
-pric_type_3:
+pricing3:
   name: 服务类别 3
   category: pricing
