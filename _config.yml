@@ -25,3 +25,15 @@ collections:
   articles:
     output: true
     permalink: articles/:title.html
+  products:
+    output: true
+    permalink: products/:path.html
+  cases:
+    output: true
+    permalink: cases/:path.html
+  pricing:
+    output: true
+    permalink: pricing/:path.html
+  faq:
+    output: true
+    permalink: faq/:path.html

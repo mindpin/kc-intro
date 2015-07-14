@@ -1,15 +1,13 @@
 <ul class="nav nav-pills nav-stacked">
-  {% for sub in site.data.sub-category %}
-  {% assign key = sub[0] %}
-  {% assign value = sub[1] %}
-  {% if include.category.category == value['category'] %}
-  {% if include.category.sub-category == key %}
+  {% assign groups = site.collections[include.category].docs | group_by: "category" %}
+  {% for group in groups %}
+  {{group}}
+  {% if include.category == group %}
   <li class="active">
   {% else %}
   <li>
   {% endif %}
-    <a href="{{ site.baseurl }}/sub_category/{{ key }}/index.html">{{ value['name'] }}</a>
+    <a href="{{ site.baseurl }}/category/{{ group.category }}/index.html">{{ group.category }}</a>
   </li>
-  {% endif %}
   {% endfor %}
 </ul>
