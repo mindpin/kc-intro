@@ -1,21 +1,12 @@
 ---
 layout: default
 ---
-<div class="col-md-3">
+<div class="col-md-3 sidebar">
   {% include sub-category.html category=page.sub-category %}
   {% include search.html %}
 </div>
 
 
-<div class="col-md-9">
-  <ul class="list-unstyled">
-    {% for article in site.collections[page.category].docs %}
-    {% if article.category == page.sub-category %}
-    <li>
-      <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+<div class="col-md-9 list-content">
   {{ content }}
 </div>

@@ -1,0 +1,25 @@
+---
+layout: sub_category
+---
+<div class="products">
+  {% for article in site.products %}
+  {% if article.category == page.sub-category %}
+  <div class="product clearfix">
+    <div class="pull-left image">
+      <a href="{{site.baseurl}}{{article.url}}">
+        <img src="{{ site.baseurl }}{{article.image}}" alt="{{article.title}}" />
+      </a>
+    </div>
+    <div class="pull-left info">
+      <div class="title">
+        <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+      </div>
+      <p class="desc">
+        {{ article.desc }}
+      </p>
+      <a href="{{page.url}}">>>more detail</a>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

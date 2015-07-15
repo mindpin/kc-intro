@@ -7,6 +7,9 @@ products2:
 products3:
   name: 产品类别 3
   category: products
+products4:
+  name: 产品类别 4
+  category: products
 cases1:
   name: 案例类别 1
   category: cases

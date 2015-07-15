@@ -1,7 +1,7 @@
 ---
 layout: product
 title: '产品4'
-category: prod_type_4
+category: products4
 ---
 
 产品4
