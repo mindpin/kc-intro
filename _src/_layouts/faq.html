@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="col-md-3 sidebar">
+  <ul class="nav nav-pills nav-stacked">
+    {% assign faqs = (site.faq | sort: 'ord') %}
+    {% for faq in faqs %}
+    {% if page.title == faq.title %}
+    <li class="active">
+    {% else %}
+    <li>
+    {% endif %}
+    <a href="{{ site.baseurl }}{{ faq.url }}">{{ faq.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% include search.html %}
+</div>
+
+
+<div class="col-md-9 list-content">
+  {{ content }}
+</div>
+
