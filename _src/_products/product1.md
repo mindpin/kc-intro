@@ -1,7 +1,8 @@
 ---
 layout: product
 title: 互动云课题
-desc: • 汇集资源，发布线上课程。<br />• 多种形式线上互动。<br />• 记录与改善教学过程。
+desc: 案例介绍案例介绍案例介绍案例介绍
+案例介绍案例介绍案例介绍
 category: products1
 image: /assets/default.png
 ---
