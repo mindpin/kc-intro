@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 服务名称1
+title: 服务名称2
 category: pricing1
 desc: '服务介绍服务介绍服务介绍服务介绍<br />服务介绍服务介绍服务介绍'
 image: /assets/default.png
-price: '49800元／年'
+price: '按实际使用量收费'
 ---
 
 服务介绍服务介绍服务介绍服务介绍

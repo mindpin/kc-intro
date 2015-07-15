@@ -56,8 +56,8 @@
 .list-content{
   padding: 20px;
 }
-.product{
-  margin-bottom: 20px;
+.product, .pricing{
+  margin-bottom: 40px;
   .image{
     width: 250px;
     height: 150px;
@@ -80,6 +80,14 @@
     margin-top: 10px;
     font-size: 13px;
     color: #333333;
+  }
+  .price{
+    font-weight: 400;
+    font-size: 16px;
+    color: #FF0000;
+  }
+  .buy{
+    margin-top: 10px;
   }
 }
 
