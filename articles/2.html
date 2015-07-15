@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>案例</title>
+  <title>产品2</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/kc-intro/css/bootstrap.min.css">
   <link rel="stylesheet" href="/kc-intro/css/main.css">
-  <link rel="canonical" href="/kc-intro/cases.html">
+  <link rel="canonical" href="/kc-intro/articles/2.html">
   <link rel="alternate" type="application/rss+xml" title="kc intro" href="/kc-intro/feed.xml" />
   <script src="/js/jquery.min.js"></script>
 </head>
@@ -50,9 +50,44 @@
 
 
       <div class="content clearfix">
-        <h2 class="text-center">案例</h2>
-<div class="text-content p20">
-  <h1>案例</h1>
+        <div class="sidebar col-md-3">
+  <!-- 注意，如果发布到 github pages 时采用了 gh-pages 方式，那么下列代码中的 /search, /js 等路径需要增加 /kc-intro 前缀 -->
+<div id="search" class="search-bar" >
+  <form action="/kc-intro/search" method="get">
+    <h2><input style="font-size:16px;width:120px;" type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></h2>
+  </form>
+</div>
+<section id="search-results" style="display: none;">
+  <h3>Search results</h3>
+  <div class="entries"></div>
+</section>
+
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+      <h3>
+        <a href="{{url}}">{{title}}</a>
+      </h3>
+    </article>
+  {{/entries}}
+</script>
+
+<script src="/kc-intro/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#search-query').lunrSearch({
+      indexUrl: '/kc-intro/js/index.json',   // Url for the .json file containing search index data
+      results : '#search-results',  // selector for containing search results element
+      entries : '.entries',         // selector for search entries containing element (contained within results above)
+      template: '#search-results-template'  // selector for Mustache.js template
+    });
+  });
+</script>
+
+</div>
+
+<div class="col-md-9">
+  <p>产品2</p>
 
 </div>
 
