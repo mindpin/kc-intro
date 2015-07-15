@@ -1,9 +1,7 @@
-{% for article in site.articles reversed %}
+{% for article in site.collections[include.category].docs limit:5 %}
 <ul class="list-unstyled">
-  {% if article.category == include.category %}
   <li>
     <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
   </li>
-  {% endif %}
 </ul>
 {% endfor %}
