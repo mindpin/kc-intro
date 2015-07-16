@@ -1,8 +1,0 @@
----
-layout: post
-title: 产品2
-category: products
-sub-category: prod_type_2
----
-
-产品2

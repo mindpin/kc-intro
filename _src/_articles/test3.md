@@ -1,9 +1,0 @@
----
-layout: post
-title: 案例3
-category: cases
-sub-category: case_type_1
----
-
-案例3
-
