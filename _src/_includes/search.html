@@ -1,7 +1,9 @@
 <!-- 注意，如果发布到 github pages 时采用了 gh-pages 方式，那么下列代码中的 /search, /js 等路径需要增加 {{ site.baseurl }} 前缀 -->
 <div id="search" class="search-bar" >
   <form action="{{ site.baseurl }}/search" method="get">
-    <h2><input style="font-size:16px;width:120px;" type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></h2>
+    <h2>
+      <input style="font-size:16px;" type="text" id="search-query" name="q" placeholder="请输入搜索内容" autocomplete="off" class="form-control">
+    </h2>
   </form>
 </div>
 <section id="search-results" style="display: none;">
