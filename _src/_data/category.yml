@@ -2,3 +2,7 @@ products:
   name: 产品
 cases:
   name: 案例
+pricing:
+  name: 报价
+faq:
+  name: FAQ

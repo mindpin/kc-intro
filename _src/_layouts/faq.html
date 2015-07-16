@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<ol class="breadcrumb">
+  <li><a href="{{site.baseurl}}">首页</a></li>
+  <li class="active">FAQ</li>
+  <!--<li><a href="{{site.baseurl}}/faq">{{site.data.category['faq'].name}}</a></li>-->
+  <!--<li class="active">{{page.title}}</li>-->
+</ol>
 <div class="col-md-3 sidebar">
   <ul class="nav nav-pills nav-stacked">
     {% assign faqs = (site.faq | sort: 'ord') %}

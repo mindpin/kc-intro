@@ -3,6 +3,11 @@ layout: default
 ---
 {% assign filename = page.url | replace_first: '/', '' | replace: 'downloads/', '' %}
 
+<ol class="breadcrumb">
+  <li><a href="{{site.baseurl}}">首页</a></li>
+  <li><a href="{{site.baseurl}}/sub_category/{{page.category}}/">产品</a></li>
+  <li class="active">{{page.title}}</li>
+</ol>
 <div class="sidebar col-md-3">
   <ul class="nav nav-pills nav-stacked">
     <li>
@@ -12,7 +17,7 @@ layout: default
       <a href="{{site.baseurl}}/downloads/{{filename}}">下载</a>
 </li>
     <li>
-      <a href="{{page.test_url}}">试用</a>
+      <a href="{{page.test_url}}" target="_blank">试用</a>
 </li>
   </ul>
   {% include search.html %}

@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<ol class="breadcrumb">
+  <li><a href="{{site.baseurl}}">首页</a></li>
+  <li><a href="{{site.baseurl}}/sub_category/{{page.category}}/">{{site.data.category[page.collection].name}}</a></li>
+  <li class="active">{{page.title}}</li>
+</ol>
 <h2 class="text-center">{{ page.title }}</h2>
 <div class="text-content p20">
   {{ content }}
