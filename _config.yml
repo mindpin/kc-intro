@@ -28,6 +28,9 @@ collections:
   products:
     output: true
     permalink: products/:path.html
+  downloads:
+    output: true
+    permalink: downloads/:path.html
   cases:
     output: true
     permalink: cases/:path.html

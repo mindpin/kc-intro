@@ -4,6 +4,7 @@ title: 互动云课题
 desc: 案例介绍案例介绍案例介绍案例介绍<br />案例介绍案例介绍案例介绍
 category: products1
 image: /assets/default.png
+test_url: http://product.4ye.me/
 ---
 
 * 快速的课程发布
