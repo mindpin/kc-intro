@@ -67,46 +67,11 @@
     </li>
     <li>
       <a href="/kc-intro/downloads/product4.html">下载</a>
-</li>
-    <li>
-      <a href="" target="_blank">试用</a>
-</li>
+    </li>
+        <li>
+          <a href="http://product.4ye.me/" target="_blank">试用</a>
+    </li>
   </ul>
-  <!-- 注意，如果发布到 github pages 时采用了 gh-pages 方式，那么下列代码中的 /search, /js 等路径需要增加 /kc-intro 前缀 -->
-<div id="search" class="search-bar" >
-  <form action="/kc-intro/search" method="get">
-    <h2>
-      <input style="font-size:16px;" type="text" id="search-query" name="q" placeholder="请输入搜索内容" autocomplete="off" class="form-control">
-    </h2>
-  </form>
-</div>
-<section id="search-results" style="display: none;">
-  <h3>Search results</h3>
-  <div class="entries"></div>
-</section>
-
-<script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article>
-      <h3>
-        <a href="{{url}}">{{title}}</a>
-      </h3>
-    </article>
-  {{/entries}}
-</script>
-
-<script src="/kc-intro/js/search.min.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-  $(function() {
-    $('#search-query').lunrSearch({
-      indexUrl: '/kc-intro/js/index.json',   // Url for the .json file containing search index data
-      results : '#search-results',  // selector for containing search results element
-      entries : '.entries',         // selector for search entries containing element (contained within results above)
-      template: '#search-results-template'  // selector for Mustache.js template
-    });
-  });
-</script>
-
 </div>
 
 <div class="col-md-9">
