@@ -4,6 +4,7 @@ title: 学科知识数据库
 desc: • 快速搭建可视化知识地图。<br />• 一键生成个性化教案。<br />• 轻松随心的探索式学习。
 category: products1
 image: /assets/default.png
+test_url: http://product.4ye.me/
 ---
 
 * 快速的课程发布
