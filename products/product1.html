@@ -23,6 +23,10 @@
   <nav>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
+  <li class="nav"><a class="btn btn-default" href="/users/sign_in">登录</a></li>
+</ul>
+
+      <ul class="nav navbar-nav navbar-right">
         <li class="active">
           <a href="/kc-intro/">首页</a>
         </li>
@@ -39,7 +43,6 @@
         <li>
           <a class="page-link" href="/kc-intro/faq">FAQ</a>
         </li>
-        <li class="nav"><a class="btn btn-default" href="/users/sign_in">登录</a></li>
       </ul>
       <div class="logo-text">
         <img alt="Knowledge Camp" src="/kc-intro/assets/logo.png">
@@ -50,22 +53,31 @@
 
 
       <div class="content clearfix">
-        <div class="sidebar col-md-3">
+        
+
+<ol class="breadcrumb">
+  <li><a href="/kc-intro">首页</a></li>
+  <li><a href="/kc-intro/sub_category/products1/">产品</a></li>
+  <li class="active">互动云课题</li>
+</ol>
+<div class="sidebar col-md-3">
   <ul class="nav nav-pills nav-stacked">
     <li class="active">
-      <a href="javascript:;">介绍</a>
+      <a href="/kc-intro/products/product1.html">介绍</a>
     </li>
     <li>
-      <a href="javascript:;">下载</a>
+      <a href="/kc-intro/downloads/product1.html">下载</a>
 </li>
     <li>
-      <a href="javascript:;">试用</a>
+      <a href="http://product.4ye.me/" target="_blank">试用</a>
 </li>
   </ul>
   <!-- 注意，如果发布到 github pages 时采用了 gh-pages 方式，那么下列代码中的 /search, /js 等路径需要增加 /kc-intro 前缀 -->
 <div id="search" class="search-bar" >
   <form action="/kc-intro/search" method="get">
-    <h2><input style="font-size:16px;width:120px;" type="text" id="search-query" name="q" placeholder="Search" autocomplete="off"></h2>
+    <h2>
+      <input style="font-size:16px;" type="text" id="search-query" name="q" placeholder="请输入搜索内容" autocomplete="off" class="form-control">
+    </h2>
   </form>
 </div>
 <section id="search-results" style="display: none;">
